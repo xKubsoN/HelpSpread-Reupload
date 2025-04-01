@@ -1,0 +1,103 @@
+:root {
+    --ciemny-niebieski: #003972;
+    --niebieski : #84B3D4;
+    --niebieski_2 : #84B3D4;
+    --jasny-niebieski: #DAE8F2;
+    --jasny: #EFF3F6;
+    --szary: #BFCEDC;
+    --zielony: rgb(8, 78, 50);
+}
+
+
+
+.body {
+    font-family: 'Poppins';
+    background-color: var(--);
+    height: 100vh;
+}
+
+.form_u{
+    display: none;
+    .row{
+        .col-8{
+            padding:0 3rem;
+            background-color: var(--jasny-niebieski);
+           
+            input {
+                width: 100%;
+            }
+
+            .date {
+                width: 100%;
+            }
+
+            .row {
+                padding: 0.5rem;
+            }
+            
+            select {
+                
+                width: 100%;
+            }
+
+            textarea {
+                width: 100%;
+            }
+
+            .znikam {
+                display: none;
+            }
+
+
+            .submit {
+                width: 42.5%;
+                left: 42.5%;
+            }
+
+            
+        }
+    }
+}
+
+.form_w{
+    display: none;
+    .row{
+        .col-8{
+            padding:0 3rem;
+            background-color: var(--jasny-niebieski);
+           
+            input {
+                width: 100%;
+            }
+
+            .date {
+                width: 100%;
+            }
+
+            .row {
+                padding: 0.5rem;
+            }
+            
+            select {
+                
+                width: 100%;
+            }
+
+            textarea {
+                width: 100%;
+            }
+
+            .znikam {
+                display: none;
+            }
+
+
+            .submit {
+                width: 42.5%;
+                left: 42.5%;
+            }
+
+            
+        }
+    }
+}

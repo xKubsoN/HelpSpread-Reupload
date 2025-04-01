@@ -1,0 +1,44 @@
+.btn {
+    padding: 4rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    z-index: 1;
+    color: black !important;
+    border-width: 0.25rem !important;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        transition: top 0.09s ease-in;
+    }
+    &:hover {
+        color: whitesmoke !important;
+        &::before {
+            top: 0;
+        }
+    }
+    &-primary {
+        background-color: $transparent !important;
+        border-color: $ciemny-niebieski !important;
+        transition: all .3s ease-in;
+        position: relative;
+        &::before {
+            background: $ciemny-niebieski;
+        }
+        
+    }
+    &-secondary {
+        background-color: $transparent !important;
+        border-color: $niebieski !important;
+        &::before {
+            background: $niebieski;
+        }
+    }
+}

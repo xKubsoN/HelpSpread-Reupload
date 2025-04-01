@@ -1,0 +1,193 @@
+@import "bootstrap/custom_variables.scss";
+@import "buttons/buttons.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "partials/404.scss";
+@import "form/form_u.scss";
+@import "partials/sidebar.scss";
+@import "partials/forms.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --ciemny-niebieski: #003972;
+    --niebieski : #84B3D4;
+    --niebieski_2 : #84B3D4;
+    --jasny-niebieski: #DAE8F2;
+    --jasny: #EFF3F6;
+    --szary: #BFCEDC;
+    --zielony: rgb(8, 78, 50);
+}
+
+
+.body {
+    font-family: 'Poppins';
+    background-color: var(--szary);
+    height: 100vh;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.logo span{
+    color: var(--niebieski);
+}
+
+.navbar-collapse  {
+    justify-content: flex-end;
+}
+
+.navbar {
+    background: var(--jasny);
+    height: 4rem;
+}
+
+.dropdown-menu-left {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-menu-up {
+    left: auto;
+    right: atuo;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+
+}
+
+.nav-link:last-child::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.nav-link:hover::after {
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+
+.left_side {
+    background: var(--jasny-niebieski);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    width: max-content;
+    height: fit-content;
+    min-height: 20rem;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.footer {
+    background: var(--jasny);
+}
+
+.userprofile {
+    background-color: red;
+}
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 100vh;
+    overflow:hidden;background:none!important;width:100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+ 
+/* */
+
+.box {
+    &-column {
+        height: 600px;
+        padding: 10px;
+        &__map {
+            height: auto;
+        }
+        &__list {
+            overflow: scroll;
+        }
+    }
+    &-wrapper {
+        background-color: #BFCEDC;
+        padding: 1.5rem 0;
+        position: relative;
+        &::after {
+            content: '';
+            width: 3px;
+            height: calc(100% - 2rem);
+            position: absolute;
+            top: 1rem;
+            left: 50%;
+            background-color: $niebieski;
+            @include media-breakpoint-down (lg) {
+                display: none;
+            }
+        }
+    }
+}
+
+.fform{
+    .row{
+        .col-8{
+            background-color: var(--jasny-niebieski);
+           
+            input {
+                width: 85%;
+            }
+
+            .date {
+                width: 100%;
+            }
+
+            .row {
+                padding: 0.5rem;
+                padding-left: 3rem;
+            }
+            
+            select {
+                width: 85%;
+            }
+
+            textarea {
+                width: 519.8px;
+            }
+        }
+    }
+}
+* {
+    font-family: 'Raleway', sans-serif;
+}
+footer {
+    height: 87px;
+}
+header {
+    height: 64px;
+}
+.box-wrapper {
+    min-height: calc(100vh - 151px);
+}

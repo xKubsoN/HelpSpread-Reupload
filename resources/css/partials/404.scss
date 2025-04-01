@@ -1,0 +1,43 @@
+:root {
+    --ciemny-niebieski: #003972;
+    --niebieski : #84B3D4;
+    --niebieski_2 : #84B3D4;
+    --jasny-niebieski: #DAE8F2;
+    --jasny: #EFF3F6;
+    --szary: #BFCEDC;
+    --zielony: rgb(8, 78, 50);
+}
+
+body {
+    font-family: 'Poppins';
+    height: 100vh;
+}
+
+.row2 {
+    height: 100vh;
+}
+
+.row2 > .col2{
+    display: flex;
+    align-items: center;
+}
+
+.a404 {
+    color: #003972;
+    font-size: 20rem;
+    font-weight: bolder;
+}
+
+.napis1 {
+    font-size: 2rem;
+}
+
+.help {
+    color: var(--ciemny-niebieski);
+    font-weight: bold;
+}
+
+.spread {
+    color: var(--zielony);
+    font-weight: bold;
+}
